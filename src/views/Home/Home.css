@@ -1,0 +1,22 @@
+.home-container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.app-description{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.btn-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

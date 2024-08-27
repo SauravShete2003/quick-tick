@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+background-color: #EEEEEE;
+}
+
+.center{
+  text-align: center;
+}
+
+.text-primary{
+  color: #222831;
+}
+
+.text-secondary{
+  color: #393E46;
+}
+
+.button {
+  background-color: #222831;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  width: 150px;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.2s; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  background-color: #2e333a;
+  transform: translateY(-2px);
+}
