@@ -12,3 +12,10 @@
   .back-btn:hover {
     transform: translateY(-2px);
   }
+
+  @media screen and (max-width : 500px) {
+    .back-btn{
+       top: 85vh;
+       left: 85vw;
+    }
+  }

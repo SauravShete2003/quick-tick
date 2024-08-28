@@ -43,4 +43,7 @@
     width: 140px;
     font-size: 13px;
   }
+  .btn-container{
+    width: 50%;
+  }
 }

@@ -5,7 +5,7 @@ function HomeBtn() {
   return (
     <div>
       <Link to={"/"}>
-        <img src={ImgBackBtn} className="back-btn" />
+        <img src={ImgBackBtn} className="back-btn" alt="back-btn" />
       </Link>
     </div>
   );
