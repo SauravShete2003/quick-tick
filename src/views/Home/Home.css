@@ -1,22 +1,46 @@
-.home-container{
-    width: 60%;
-    margin: 0 auto;
+.home-container {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.app-description{
-    font-size: 20px;
-    font-weight: 600;
+.app-description {
+  font-size: 20px;
+  font-weight: 600;
+  width: 70%;
+  margin: 0 auto;
 }
 
-.btn-container{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.btn-container {
+  width: 50%;
+  margin: 15px auto;
+  display: flex;
 }
 
-.feature-container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.feature-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 500px) {
+  .app-description {
+    font-size: 15px;
+    width: 100%;
+  }
+  .home-heading {
+    font-size: 22px;
+  }
+  .btn-container {
+    width: 100%;
+    margin: 0;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  .button {
+    width: 140px;
+    font-size: 13px;
+  }
 }

@@ -1,36 +1,51 @@
 .features-card {
-    width: 220px;
-    height: 160px;
-    margin: 10px 15px; 
-    padding: 15px; 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
-    background-color: #f9f9f9; 
-    border-radius: 10px; 
-    text-align: center;
-    transition: transform 0.2s, box-shadow 0.2s; 
+  width: 220px;
+  height: 160px;
+  margin: 10px 15px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fbfbfb;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .features-card:hover {
-    transform: translateY(-5px); 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
-    background-color: #ffffff;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .feature-description {
-    font-size: 16px; 
-    color: #333333; 
-    margin-top: 10px; 
-    line-height: 1.4; 
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  line-height: 1.4;
 }
 
 .features-img {
-    width: 60px; 
-    margin-bottom: 10px; 
+  width: 60px;
+  margin-bottom: 10px;
 }
 
 .features-card h3 {
-    font-size: 18px; 
-    color: #222831;
-    margin-bottom: 8px; 
-    font-weight: bold; 
+  font-size: 18px;
+  color: #222831;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+  .features-card {
+    width: 170px;
+    height: auto;
+  }
+  .feature-description {
+    font-size: 14px;
+    color: black;
+    margin: 5px;
+  }
+  .features-img{
+    width: 40px;
+    margin: 5px;
+  }
 }
