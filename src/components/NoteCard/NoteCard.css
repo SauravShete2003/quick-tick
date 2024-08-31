@@ -1,0 +1,27 @@
+.note-card-conatiner{
+    background-color: antiquewhite;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.note-card-emoji{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.note-card-description{
+    margin: 10px;
+}
+
+.note-card-title{
+    margin: 10px;
+}
+
+.note-card-category{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}

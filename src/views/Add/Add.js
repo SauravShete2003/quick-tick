@@ -2,6 +2,7 @@ import "./Add.css";
 import HomeBtn from "../../components/HomeBtn/HomeBtn";
 import { useState } from "react";
 import EmojiPicker from "emoji-picker-react";
+import toast from "react-hot-toast";
 function Add() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -19,6 +20,7 @@ function Add() {
       }
       notes.push(newNote);
       localStorage.setItem("notes", JSON.stringify(notes))
+      toast.success('Notes add successfully👍🏻')
   }
   return (
     <div>
@@ -81,9 +83,7 @@ function Add() {
 
           <button
             className="button add-btn"
-            onClick={addNote()}
-            style={{ backgroundColor: "#00ADB5" }}
-          >
+            onClick={addNote}>
             Add Note ⊕
           </button>
         </div>
