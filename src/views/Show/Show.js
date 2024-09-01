@@ -12,18 +12,20 @@ function Show() {
   return (
     <div>
       <h1 className="center text-primary">View Notes 👁️</h1>
-      {notes.map((noteObject, i) => {
-        const { title, description, category, emoji } = noteObject;
-        return (
-          <NoteCard
-            key={i}
-            title={title}
-            description={description}
-            category={category}
-            emoji={emoji}
-          />
-        );
-      })}
+      <div className="note-container">
+        {notes.map((noteObject, index) => {
+          const { title, description, category, emoji } = noteObject;
+          return (
+            <NoteCard
+              key={index}
+              title={title}
+              description={description}
+              category={category}
+              emoji={emoji}
+            />
+          );
+        })}
+      </div>
       <HomeBtn />
     </div>
   );

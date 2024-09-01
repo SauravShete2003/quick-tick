@@ -1,27 +1,104 @@
-.note-card-conatiner{
-    background-color: antiquewhite;
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-.note-card-emoji{
-    position: absolute;
-    right: 10px;
-    top: 10px;
-}
-
-.note-card-description{
-    margin: 10px;
+/* Note Card Container Styling */
+.note-card-container {
+  position: relative;
+  background-color: #fff;
+  margin: 10px 20px;
+  padding: 15px 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.note-card-title{
-    margin: 10px;
+.emoji-container {
+  position: absolute;
+  left: 15px;
+  top: 15px;
 }
 
-.note-card-category{
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
+.note-card-emoji {
+  font-size: 40px;
+}
+
+.note-card-content {
+  margin-left: 60px;
+}
+
+.note-card-title {
+  margin: 10px 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+}
+
+.note-card-description {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+  line-height: 1.4;
+}
+
+.note-category {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  min-width: 70px;
+  text-align: center;
+  color: #333;
+  margin-top: 10px;
+}
+
+.category-emoji {
+  font-size: 14px;
+}
+
+.category-name {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.delete-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  width: 35px;
+  border: none;
+  border-radius: 60%;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.delete-icon:hover {
+  transform: translateY(-2px);
+}
+@media screen and (max-width: 500px) {
+  .note-card-container {
+    padding: 8px 20px;
+  }
+  .note-card {
+    width: 100%;
+  }
+  .note-card-title {
+    font-size: 18px;
+  }
+  .note-card-description {
+    font-size: 14px;
+  }
+  .note-category {
+    top: 0;
+    padding: 4px 8px;
+  }
+  .delete-icon {
+    bottom: 5px;
+    width: 28px;
+    right: 30px;
+  }
 }

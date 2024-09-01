@@ -54,7 +54,6 @@ function Add() {
           <option value="work">Work</option>
           <option value="health">Health</option>
           <option value="grocery">Grocery</option>
-          <option value="grocery">Grocery</option>
         </select>
 
         <div

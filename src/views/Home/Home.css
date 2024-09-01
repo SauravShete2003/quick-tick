@@ -38,7 +38,7 @@
     background-color: #fff;
     position: fixed;
     bottom: 0;
-    left:0;
+    left:-10px;
   }
   .button {
     width: 140px;
