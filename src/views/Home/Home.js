@@ -1,6 +1,6 @@
 import "./Home.css";
 import imgSecure from "./secure.png";
-import imgBrain from "./brain .png";
+import imgBrain from "./brain.png";
 import imgLove from "./love.png";
 import FeaturesCard from "./../../components/FeaturesCard/FeaturesCard";
 import { Link } from "react-router-dom";
