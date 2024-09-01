@@ -9,12 +9,13 @@ function deleteNote(index) {
 
 function NoteCategory({ category }) {
   const CATEGORY_STYLES = {
-    work: { emoji: "💼", bgColor: "#FFD700" },
+    work: { emoji: "💼", bgColor: "#0099ff" },
     personal: { emoji: "📝", bgColor: "#ADD8E6" },
     learning: { emoji: "📚", bgColor: "#90EE90" },
     health: { emoji: "💪🏻", bgColor: "#FFB6C1" },
     hobbies: { emoji: "🎨", bgColor: "#DDA0DD" },
     shopping: { emoji: "🛍️", bgColor: "#FFE4B5" },
+    grocary: { emoji: "🥬", bgColor: " #90EE90" },
   };
 
   const { emoji, bgColor } = CATEGORY_STYLES[category];
@@ -27,7 +28,7 @@ function NoteCategory({ category }) {
   );
 }
 
-function NoteCard({ title, description, category, emoji , index}) {
+function NoteCard({ title, description, category, emoji, index }) {
   return (
     <div className="note-card-container">
       <div className="emoji-container">
