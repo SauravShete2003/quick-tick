@@ -11,14 +11,13 @@ function NoteCategory({ category }) {
   const CATEGORY_STYLES = {
     work: { emoji: "💼", bgColor: "#0099ff" },
     personal: { emoji: "📝", bgColor: "#ADD8E6" },
-    learning: { emoji: "📚", bgColor: "#90EE90" },
+    learning: { emoji: "📚", bgColor: "#D8BFD8" },
     health: { emoji: "💪🏻", bgColor: "#FFB6C1" },
-    hobbies: { emoji: "🎨", bgColor: "#DDA0DD" },
     shopping: { emoji: "🛍️", bgColor: "#FFE4B5" },
-    grocary: { emoji: "🥬", bgColor: " #90EE90" },
+    grocery: { emoji: "🥬", bgColor: "#90EE90" },
   };
 
-  const { emoji, bgColor } = CATEGORY_STYLES[category];
+  const { emoji = "❓", bgColor = "#ccc" } = CATEGORY_STYLES[category] || {};
 
   return (
     <div className="note-category" style={{ backgroundColor: bgColor }}>
