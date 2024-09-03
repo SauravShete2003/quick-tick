@@ -10,18 +10,18 @@ function Add() {
   const [emoji, setEmoji] = useState("");
   const [showEmojiPicker, setShowEmojiPicker] = useState(false);
 
-  const addNote = ()=>{
+  const addNote = () => {
     const notes = JSON.parse(localStorage.getItem("notes")) || [];
     const newNote = {
       title,
       description,
       category,
-      emoji
-      }
-      notes.push(newNote);
-      localStorage.setItem("notes", JSON.stringify(notes))
-      toast.success('Notes add successfully👍🏻')
-  }
+      emoji,
+    };
+    notes.push(newNote);
+    localStorage.setItem("notes", JSON.stringify(notes));
+    toast.success("Notes add successfully👍🏻");
+  };
   return (
     <div>
       <h1 className="center text-primary home-heading">Add Notes📝</h1>
@@ -58,16 +58,15 @@ function Add() {
 
         <div
           className="form-control center"
-          style={{backgroundColor : 'white' }}        
+          style={{ backgroundColor: "white" }}
           onClick={() => {
             setShowEmojiPicker(true);
           }}
         >
-          {emoji ? emoji : 'Select Emoji'}
+          {emoji ? emoji : "Select Emoji"}
         </div>
 
-        <div className="button-conatiner" >
-
+        <div className="button-conatiner">
           <EmojiPicker
             open={showEmojiPicker}
             height={"350px"}
@@ -80,9 +79,7 @@ function Add() {
             className="emoji-picker"
           />
 
-          <button
-            className="button add-btn"
-            onClick={addNote}>
+          <button className="button add-btn" onClick={addNote}>
             Add Note ⊕
           </button>
         </div>

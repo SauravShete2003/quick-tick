@@ -12,7 +12,7 @@ function NoteCategory({ category }) {
     work: { emoji: "💼", bgColor: "#0099ff" },
     personal: { emoji: "📝", bgColor: "#ADD8E6" },
     learning: { emoji: "📚", bgColor: "#D8BFD8" },
-    health: { emoji: "💪🏻", bgColor: "#FFB6C1" },
+    health: { emoji: "💪🏻", bgColor: "#FFB6C1" },  
     shopping: { emoji: "🛍️", bgColor: "#FFE4B5" },
     grocery: { emoji: "🥬", bgColor: "#90EE90" },
   };

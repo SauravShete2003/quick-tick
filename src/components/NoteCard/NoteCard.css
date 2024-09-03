@@ -97,8 +97,8 @@
     padding: 4px 8px;
   }
   .delete-icon {
-    bottom: 5px;
+    bottom: 10px;
     width: 28px;
-    right: 30px;
+    right: 20px;
   }
 }
